@@ -164,6 +164,7 @@ footer 	{
 		top: 0;
 		height:50px;
 		background: #b71540;
+		box-shadow: 0 0 5px rgba(0,0,0,.5);
 	}
 	
 	nav .title{
@@ -183,7 +184,7 @@ footer 	{
 		margin-right:0;
 		top: 50%;
 		width: 50px;
-		height: 80px;
+		height: 50px;
 		background-color: transparent;
 		border: 0;
 		cursor: pointer;
@@ -207,16 +208,51 @@ footer 	{
 		margin-top: -10px;
 	}
 
-	nav ul{
+	nav .links{
 		background: #b71540;
 		float: none;
-		/*position:fixed;*/ 
+		position:fixed;
 		z-index:9;
-		left:0;
-		right:0;
+		left:100%;
+		right:-100%;
+		overflow:hidden;
+		transition: all .5s ease-in-out;
 	}
 
-	.nav-opened nav ul{
+	nav .links ul li{
+		transform: translateX(200px);
+		transition: all .3s ease-in-out;
+	}
+	
+	.nav-opened nav .links ul li{
+		transform: translateX(0);
+	}
+	
+	.nav-opened nav .links ul li:nth-child(1){
+		transition-delay: 0s;
+	}
+	.nav-opened nav .links ul li:nth-child(2){
+		transition-delay: .1s;
+	}
+	.nav-opened nav .links ul li:nth-child(3){
+		transition-delay: .2s;
+	}
+	.nav-opened nav .links ul li:nth-child(4){
+		transition-delay: .3s;
+	}
+	.nav-opened nav .links ul li:nth-child(5){
+		transition-delay: .4s;
+	}
+	.nav-opened nav .links ul li:nth-child(6){
+		transition-delay: .5s;
+	}
+	.nav-opened nav .links ul li:nth-child(7){
+		transition-delay: .6s;
+	}
+	.nav-opened nav .links ul li:nth-child(8){
+		transition-delay: .7s;
+	}
+	.nav-opened nav .links{
 		left:0;
 		right:0;
 	}
