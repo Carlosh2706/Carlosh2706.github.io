@@ -4,14 +4,20 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
-
 body{
+	margin:0;
+}
+section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: #222;
 	min-height: 100vh;
 	
+}
+
+header{
+	color:black;
 }
 
 article{
@@ -101,6 +107,10 @@ article .card .content a{
 	background: #333;
 	text-decoration: none;
 	color: #fff;
+}
+
+footer{
+	
 }
 
 @media (max-width: 992px){

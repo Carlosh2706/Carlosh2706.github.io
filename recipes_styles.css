@@ -3,17 +3,20 @@
 	}
 	
 body	{
+			height: 100%;
+			width:100%;
 			margin:0px;
 			line-height:20px;
 		}
 		
 /* Style the header */
 header {
-  background-color: #666;
-  padding: 25px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
+	margin:0px;
+	background-color: #666;
+	padding: 25px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
 }
 
 /* Container for flexboxes */
@@ -122,8 +125,154 @@ article h2, article h3	{
 
 /* Style the footer */
 footer 	{
+			position:absolute;
 			background-color: #777;
 			padding: 20px;
 			text-align: center;
 			color: white;
+			bottom:0;
+			right:0;
+			width:100%;
 		}
+		
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	header{
+		display:none;
+	}
+	section{
+		flex-direction:column;
+	}
+	
+	article{
+		padding:0;
+		margin:0;
+	}
+	nav{
+		position: fixed;
+		z-index: 10;
+		left: 0;
+		right: 0;
+		top: 0;
+		height:50px;
+		background: #b71540;
+	}
+	
+	nav .title{
+		float:none;
+		margin-left: 5%;
+		width: auto;
+		height:100%;
+		display:flex;
+		align-items: center;
+		font-size: 24px;
+		color: #fff;
+	}
+	
+	nav .icon-burger{
+		position: absolute;
+		right:1%;
+		margin-right:0;
+		top: 50%;
+		width: 50px;
+		height: 80px;
+		background-color: transparent;
+		border: 0;
+		cursor: pointer;
+		outline: none;
+		transform: translateY(-50%);
+		display: block;
+	}
+	
+	nav .icon-burger .line{
+		display:block;
+		width:30px;
+		height:5px;
+		background-color: #fff;
+		margin: 5px;
+		margin-right:0;
+		border-radius: 3px;
+		transition: all .3s ease-in-out;
+	}
+	
+	nav .icon-burger .line:nth-child(3){
+		margin-top: -10px;
+	}
+	
+	nav ul{
+		background: #b71540;
+		float: none;
+		
+		z-index:9;
+		left:0;
+		right:0;
+	}
+
+	.nav-opened nav ul{
+		left:0;
+		right:0;
+	}
+	
+	.nav-opened nav .icon-burger .line:nth-child(1),
+	.nav-opened nav .icon-burger .line:nth-child(4){
+		transform: scale(0);
+	}
+	
+	.nav-opened nav .icon-burger .line:nth-child(2){
+		transform: rotate(45deg);
+	}
+	
+	.nav-opened nav .icon-burger .line:nth-child(3){
+		transform: rotate(-45deg);
+	}
+	
+
+
+	article i	{
+					margin-left:40px;
+				}
+
+	article img	{
+					height:300px;
+					width:500px;
+					float:right;
+					margin-top:50px;
+					margin-right:150px;
+				}
+				
+	article h1	{
+					font-size:35px;
+					margin-bottom:20px;
+					margin-top:20px;
+				}
+	article h2, article h3	{
+					font-size:20px;
+				}	
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	nav .title{
+		display:none;
+	}
+	nav button{
+		display:none;
+	}
+}
