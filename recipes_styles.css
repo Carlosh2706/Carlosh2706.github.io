@@ -9,6 +9,9 @@ body	{
 			line-height:20px;
 		}
 		
+icon {
+	color:#fff;
+}
 /* Style the header */
 header {
 	margin:0px;
@@ -44,7 +47,7 @@ nav ul 	{
 nav ul li a	{
 				text-decoration:none;
 				display:block;
-				color:#494949;
+				color:#fff;
 				padding:15px 20px;
 				background:e9e9e9;
 				font-size:20px;
@@ -63,6 +66,7 @@ nav ul li ul li a:hover	{
 nav ul li .icon 	{
 					font-size:20px;
 					line-height:20px;
+					color:#fff;
 					}
 				
 nav ul li .icon.left	{
@@ -135,6 +139,9 @@ footer 	{
 			width:100%;
 		}
 		
+		
+		
+
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -199,11 +206,11 @@ footer 	{
 	nav .icon-burger .line:nth-child(3){
 		margin-top: -10px;
 	}
-	
+
 	nav ul{
 		background: #b71540;
 		float: none;
-		
+		/*position:fixed;*/ 
 		z-index:9;
 		left:0;
 		right:0;
