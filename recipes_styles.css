@@ -290,13 +290,14 @@ footer a{
 		border-bottom:  2px solid rgba(0,0,0,0.15);
 	}
 	
-	article .border ul li{
+	article .border ul li, article ol li{
 		font-size: 15px;
 	}
 	
-	article .border ul{
+	article .border ul, article ol{
 		padding-left:20px;
 	}
+	
 	footer a{
 		width: auto;
 		height:100%;
