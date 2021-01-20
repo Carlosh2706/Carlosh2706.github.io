@@ -105,10 +105,6 @@ article {
 			background-color: #f1f1f1;
 			padding: 10px;
 		}
-
-article i	{
-				margin-left:40px;
-			}
 			
 article h1	{
 				font-size:35px;
@@ -262,25 +258,51 @@ footer a{
 	}
 
 	article{
-		margin-top: 50px;
-		padding:10px;
+		margin-top: 40px;
+		padding:15px;
 	}
 	
+	article h1	{
+					font-size:32px;
+					padding-bottom:20px;
+					margin-bottom:4px;
+					font-family:Arial Black;
+					font-weight:600;
+					letter-spacing:0l;
+					border-bottom:  2px solid rgba(0,0,0,0.15);
+				}
+				
 	article img	{
 					height:100%;
 					width:100%;
 					float:none;
 				}
 				
-	article h1	{
-					font-size:35px;
-					margin-bottom:20px;
-					margin-top:20px;
-				}
+	
 	article h2, article h3	{
 					font-size:20px;
-				}	
+					margin:10px 0 10px 0;
+					font-family:Arial Black;
+	}
 
+	.border{
+		border-top:  2px solid rgba(0,0,0,0.15);
+		border-bottom:  2px solid rgba(0,0,0,0.15);
+	}
+	
+	article .border ul li{
+		font-size: 15px;
+	}
+	
+	article .border ul{
+		padding-left:20px;
+	}
+	footer a{
+		width: auto;
+		height:100%;
+		font-size: 18px;
+		color: #fff;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -312,5 +334,8 @@ footer a{
 				float:right;
 				margin-top:50px;
 				margin-right:150px;
+			}
+	article i	{
+				margin-left:40px;
 			}
 }
