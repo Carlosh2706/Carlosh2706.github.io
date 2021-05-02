@@ -15,7 +15,7 @@ icon {
 /* Style the header */
 header {
 	margin:0px;
-	background-color: #666;
+	background-color: #B31818;
 	padding: 25px;
 	text-align: center;
 	font-size: 35px;
@@ -117,7 +117,7 @@ article h2, article h3	{
 
 /* Style the footer */
 footer 	{
-			background-color: #b71540;
+			background-color: #B31818;
 			padding: 20px;
 			text-align: center;
 			color: white;
@@ -150,7 +150,7 @@ footer a{
 		right: 0;
 		top: 0;
 		height:50px;
-		background: #b71540;
+		background: #B31818;
 		box-shadow: 0 0 5px rgba(0,0,0,.5);
 	}
 	
@@ -196,7 +196,7 @@ footer a{
 	}
 
 	nav .links{
-		background: #b71540;
+		background: #B31818;
 		float: none;
 		position:fixed;
 		z-index:9;
@@ -258,7 +258,7 @@ footer a{
 	}
 
 	article{
-		margin-top: 40px;
+		margin-top: 50px;
 		padding:15px;
 	}
 	
