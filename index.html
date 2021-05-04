@@ -95,9 +95,9 @@
 		
 		<h3>Categories</h3>
 		
-		<div class="categories">
+		<div class="categories" >
 			<div class="wrapper">
-				<div class="carousel owl-carousel">
+				<div class="carousel owl-carousel" id="carousel">
 					<div class="card"><a href="#">
 						<img src="Imgs/drinks-slider.jpg"></img>
 						<div class="category-title">Drinks</div>
@@ -144,7 +144,7 @@
 		
 		<div class="gallery">
 			<div class="wrapper">
-				<div class="carousel owl-carousel">
+				<div class="carousel owl-carousel" id="gallery">
 					<div class="picture" a href="#">
 						<img src="Imgs/cheesecake-gallery.jpg"></img>
 						</a>
@@ -293,14 +293,16 @@
 <div class="portfolio">CHARLIE'S<i class="far fa-copyright"></i></div>
 
 <script>
- 	/*$(".carousel").owlCarousel({
+
+	$("#carousel").owlCarousel({
 		margin: 5,
-		loop:false,
+		loop:true,
 		autoplay:false,
 		autoplayTimeout: 2000,
 		autoplayHoverPause: false,
 		responsive: {
 			0:{
+			<!-- Edit Here -->
 				items:4,
 				nav: false
 			},
@@ -313,30 +315,31 @@
 				nav: false
 			}
 		}
-	});*/
+	});
 	
-	$(".gallery").owlCarousel({
-		margin: 5,
+	$("#gallery").owlCarousel({
+		margin:5,
 		loop:true,
 		autoplay:true,
 		autoplayTimeout: 4000,
-		autoplayHoverPause: false,
+		autoplayHoverPause: true,
 		responsive: {
 			0:{
 			<!-- Edit Here -->
 				items:1,
-				nav: true
+				nav: false
 			},
 			600:{
 				items:2,
-				nav: true
+				nav: false
 			},
 			1000:{
 				items:3,
-				nav: true
+				nav: false
 			}
 		}
 	});
+	
 </script>
 <script src= "https://code.jquery.com/jquery-1.12.0.min.js"> </script>
 <script src= "main.js"></script>
