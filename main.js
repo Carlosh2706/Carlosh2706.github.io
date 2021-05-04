@@ -28,3 +28,4 @@ burger.addEventListener('click', ()=> {
 		wrap.classList.add('nav-opened');
 	}
 })
+
