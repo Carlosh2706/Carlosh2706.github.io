@@ -1,0 +1,95 @@
+.background{
+	margin-top:50px;
+	position:relative;
+	width:100%;
+	height:200px;
+}
+
+.background img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	box-sizing:border-box;
+}
+
+.background-title{
+	position:absolute;
+	color:white;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-family: 'Dancing Script', cursive;
+	font-size:4.8em;
+}
+
+.search-box{
+	top:290px;
+}
+
+article{
+	margin-top:5px;
+}
+
+h4{
+	color:#707070;
+	text-align:center;
+	margin-top:0;
+	margin-bottom: 10px;
+	font-size:1.17em;
+}
+
+.recommended_recipes{
+	display:flex;
+	flex-direction:column;
+}
+.recommended_recipes a{
+	text-decoration:none;
+}
+
+.recommended-description{
+	margin-left:0px;
+	flex:70%;
+	display:flex;
+	flex-direction:column;
+}
+
+.recommended-description .title{
+	font-family: 'Lato', sans-serif;
+	font-size:30px;
+	font-weight:500;
+	line-height:30px;
+}
+
+.recommended-description .difficulty, .recommended-description .time{
+	font-family: 'Oswald', sans-serif;
+	font-weight:100;
+	font-size:10px; 
+	line-height:15px;
+}
+
+.recommended-item{
+	border-top:2px solid #e7e6e6;
+	display:flex;
+	flex-direction:column;
+	padding:15px;
+}
+.recommended-img{
+	flex:60%;
+}
+.recommended-img img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	box-sizing:border-box;
+}
+
+.fa-clock{
+	margin-left:10px;
+}
+.fa-clock, .fa-star, .fa-star-half-alt{
+	color:#B31818;
+}
+
+.try{
+	font-size:10px;
+}
