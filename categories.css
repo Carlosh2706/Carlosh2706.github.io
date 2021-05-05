@@ -30,12 +30,14 @@ article{
 	margin-top:5px;
 }
 
-h4{
+.recommended{
+	font-family: 'Girassol', cursive;
+	font-size:1.17em;
+	font-weight:bold;
 	color:#707070;
 	text-align:center;
 	margin-top:0;
 	margin-bottom: 10px;
-	font-size:1.17em;
 }
 
 .recommended_recipes{
@@ -83,7 +85,7 @@ h4{
 	box-sizing:border-box;
 }
 
-.fa-clock{
+.recommended-description .fa-clock{
 	margin-left:10px;
 }
 .fa-clock, .fa-star, .fa-star-half-alt{
