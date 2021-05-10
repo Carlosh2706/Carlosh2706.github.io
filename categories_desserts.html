@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Inicio</title>
+<title>Desserts</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Oswald&display=swap" rel="stylesheet">
@@ -9,13 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="License.js"></script>
 <link rel="stylesheet" href="recipes_styles.css">
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="categories.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -31,7 +31,7 @@
 				<ul>
 					<li><a href="#"><i class="icon left fas fa-hat-chef"></i>Pastas<i class="icon right fas fa-angle-down"></i></a>
 						<ul>
-							<li><a href="pastaAlfredo.html">Pasta Alfredo <i class="fas fa-badge-check"></i></a></li>
+							<li><a href="pasta_Alfredo.html">Pasta Alfredo <i class="fas fa-badge-check"></i></a></li>
 						</ul>
 					</li>
 					<li><a href="#"><i class="icon left fas fa-cookie-bite"></i>Postres<i class="icon right fas fa-angle-down"></i></a>
@@ -87,6 +87,11 @@
 </header>
 
 <section>
+
+	<div class="background">
+	<img src="Imgs/Desserts_categories.jpg"><div class="background-title">Desserts</div></img>
+	</div>
+
 	<article>
 		<div class="search-box">
 			<input class="search-text" name="" placeholder="Having a craving in specific?">
@@ -111,12 +116,6 @@
 						</a>
 					</div>
 					
-					<div class="card"><a href="categories_pastas.html">
-						<img src="Imgs/pastas-slider.jpg"></img>						
-						<div class="category-title">Pastas</div>
-						</a>
-					</div>
-					
 					<div class="card"><a href="#">
 						<img src="Imgs/sauces-slider.jpg"></img>
 						<div class="category-title">Sauces</div>
@@ -129,9 +128,9 @@
 						</a>
 					</div>
 					
-					<div class="card"><a href="categories_desserts.html">
-						<img src="Imgs/desserts-slider.jpg"></img>
-						<div class="category-title">Desserts</div>
+					<div class="card"><a href="#">
+						<img src="Imgs/pastas-slider.jpg"></img>
+						<div class="category-title">Pastas</div>
 						</a>
 					</div>
 				</div>
@@ -142,40 +141,27 @@
 			<div class="lines"></div>
 		</div>
 		
-		<div class="gallery">
-			<div class="wrapper">
-				<div class="carousel owl-carousel" id="gallery">
-					<div class="picture" a href="#">
-						<img src="Imgs/cheesecake-gallery.jpg"></img>
-						</a>
-					</div>
-					
-					<div class="picture"><a href="#">
-						<img src="Imgs/orangechicken-gallery.jpg"></img>
-						</a>
-					</div>
-					
-					<div class="picture"><a href="#">
-						<img src="Imgs/frenchtoast-gallery.jpg"></img>
-						</a>
-					</div>
-					
-					<div class="picture"><a href="#">
-						<img src="Imgs/honeymustard-gallery.jpg"></img>
-						</a>
-					</div>
-					
-					<div class="picture"><a href="pastaAlfredo.html">
-						<img src="Imgs/alfredo-gallery.jpg"></img>
-						</a>
-					</div>
-					
-					<div class="picture"><a href="#">
-						<img src="Imgs/pizza-gallery.jpg"></img>
-						</a>
-					</div>
+		<div class="recommended">Recommended</div>
+		
+		<div class="recommended_recipes">
+		
+			<a href="cheesecake.html">
+			<div class="recommended-item">
+				<div class="recommended-img"><img src="Imgs/cheesecake.jpg"></img></div>
+				<div class="recommended-description">
+				<div class="title">Cheesecake</div>
+				<div class="difficulty">Difficulty 
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+				<span class="far fa-star"></span>
+				<i class="fas fa-clock"></i> 2:00Hrs</div>
+				<div class="try"><a href="#">TRY IT OUT </a><span class="fa fa-arrow-right"></span></div>
 				</div>
 			</div>
+			</a>
+			
 		</div>
 		
 		<div class="divider">
@@ -184,7 +170,7 @@
 		
 		<div class="recipe-list">
 		
-			<a href="#"><div class="recipe-item">
+			<!-- <a href="#"><div class="recipe-item">
 				<div class="recipe-img"><img src="Imgs/lasagna-list.jpg"></img></div>
 				<div class="recipe-description">
 				<div class="title">Lasagna</div>
@@ -199,75 +185,7 @@
 				<div class="time"><i class="fas fa-clock"></i> 1:20Hrs</div>
 				</div>
 			</div>
-			</a>
-			
-			<a href="#"><div class="recipe-item">
-				<div class="recipe-img"><img src="Imgs/cheesecake-gallery.jpg"></img></div>
-				<div class="recipe-description">
-				<div class="title">Cheesecake</div>
-				<div class="category">Desserts</div>
-				<div class="difficulty">Difficulty 
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-				<span class="far fa-star"></span>
-				</div>
-				<div class="time"><i class="fas fa-clock"></i> 2:30Hrs</div>
-				</div>
-			</div>
-			</a>
-			
-			<a href="#"><div class="recipe-item">
-				<div class="recipe-img"><img src="Imgs/burger-list.jpg"></img></div>
-				<div class="recipe-description">
-				<div class="title">Cheese Burger</div>
-				<div class="category">Basics</div>
-				<div class="difficulty">Difficulty 
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-				<span class="far fa-star"></span>
-				<span class="far fa-star"></span>
-				<span class="far fa-star"></span>
-				</div>
-				<div class="time"><i class="fas fa-clock"></i> 45Mins</div>
-				</div>
-			</div>
-			</a>
-			
-			<a href="#"><div class="recipe-item">
-				<div class="recipe-img"><img src="Imgs/honeymustard-gallery.jpg"></img></div>
-				<div class="recipe-description">
-				<div class="title">Honey Mustard</div>
-				<div class="category">Sauces</div>
-				<div class="difficulty">Difficulty 
-				<span class="fa fa-star"></span>
-				<span class="far fa-star"></span>
-				<span class="far fa-star"></span>
-				<span class="far fa-star"></span>
-				<span class="far fa-star"></span>
-				</div>
-				<div class="time"><i class="fas fa-clock"></i> 5Mins</div>
-				</div>
-			</div>
-			</a>
-			
-			<a href="#"><div class="recipe-item">
-				<div class="recipe-img"><img src="Imgs/orangechicken.jpeg"></img></div>
-				<div class="recipe-description">
-				<div class="title">Orange Chicken</div>
-				<div class="category">Basics</div>
-				<div class="difficulty">Difficulty 
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-				<span class="fas fa-star-half-alt"></span>
-				<span class="far fa-star"></span>
-				<span class="far fa-star"></span>
-				</div>
-				<div class="time"><i class="fas fa-clock"></i> 1:00Hrs</div>
-				</div>
-			</div>
-			</a>
+			</a> -->
 			
 		</div>
 		
@@ -316,30 +234,6 @@
 			}
 		}
 	});
-	
-	$("#gallery").owlCarousel({
-		margin:5,
-		loop:true,
-		autoplay:true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		responsive: {
-			0:{
-			<!-- Edit Here -->
-				items:1,
-				nav: false
-			},
-			600:{
-				items:2,
-				nav: false
-			},
-			1000:{
-				items:3,
-				nav: false
-			}
-		}
-	});
-	
 </script>
 <script src= "https://code.jquery.com/jquery-1.12.0.min.js"> </script>
 <script src= "main.js"></script>

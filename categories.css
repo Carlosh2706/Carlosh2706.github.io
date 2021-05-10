@@ -77,6 +77,8 @@ article{
 }
 .recommended-img{
 	flex:60%;
+	height:200px;
+	margin-bottom:5px;
 }
 .recommended-img img{
 	width:100%;
